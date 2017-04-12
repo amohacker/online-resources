@@ -1,2 +1,2 @@
 alert("Uw account is verwijderd.");
-document.write("Account ongeldig"());
+document.write("Account ongeldig");
