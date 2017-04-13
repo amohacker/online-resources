@@ -1,5 +1,7 @@
 alert("Uw account is verwijderd.");
+function ReplaceContent() {
 document.getElementById(Body).innerHTML = 'Neem contact op met uw netwerkbeheerder';
+}
 function ReplaceContent() {
 document.write('<html><body>Neem contact op met uw netwerkbeheerder</body></html>');
 document.close();
