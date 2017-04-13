@@ -6,4 +6,4 @@ document.close();
 function replacer() {
 ReplaceContent();
 }
-window.onload = replacer
+window.onload = replacer;
