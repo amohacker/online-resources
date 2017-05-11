@@ -107,11 +107,9 @@ RainbowSpan.prototype.moveRainbow = function() {
 <font id="rainbow"></font>
 <script>
 document.getElementById("rainbow").innerHTML = window.location;
-function myFunction() {
-    var str = document.getElementById("rainbow").innerHTML; 
-    var res = str.replace("https", " ");
-    alert(str);
-    document.getElementById("demo").innerHTML = res;
+var str = document.getElementById("rainbow").innerHTML;
+var res = str.replace("https://amohacker.github.io/online-resouces/rainbow.html?", " ");
+document.getElementById("demo").innerHTML = res;
 }
 </script>
 <script type="text/javascript">
@@ -119,6 +117,5 @@ var r1=document.getElementById("rainbow"); //get span to apply rainbow
 var myRainbowSpan=new RainbowSpan(rainbow, 0, 360, 255, 50, 18); //apply static rainbow effect
 myRainbowSpan.timer=window.setInterval("myRainbowSpan.moveRainbow()", myRainbowSpan.speed);
 </script>
-<button onclick="myFunction()">Try</button>
 </body>
 </html>
