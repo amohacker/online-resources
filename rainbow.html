@@ -104,7 +104,7 @@ RainbowSpan.prototype.moveRainbow = function() {
 // End -->
 </script>
 
-<font id="rainbow" onload="myFunction()"></font>
+<font id="rainbow"></font>
 <script>
 function myFunction() {
   var str = window.location;
@@ -118,4 +118,5 @@ var myRainbowSpan=new RainbowSpan(rainbow, 0, 360, 255, 50, 18); //apply static 
 myRainbowSpan.timer=window.setInterval("myRainbowSpan.moveRainbow()", myRainbowSpan.speed);
 </script>
 </body>
+<footer onload="myFunction()"></footer>
 </html>
