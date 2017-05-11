@@ -108,12 +108,12 @@ RainbowSpan.prototype.moveRainbow = function() {
 <script>
 function myFunction() {
   var str = window.location;
-  var res = str.replace("https", "");
+  var res = str;#.replace("https", "");
   document.getElementById("rainbow").innerHTML = res;
 }
 </script>
 <script type="text/javascript">
-var r1=document.getElementById("rainbow"); //get span to apply rainbow
+var rainbow=document.getElementById("rainbow"); //get span to apply rainbow
 var myRainbowSpan=new RainbowSpan(rainbow, 0, 360, 255, 50, 18); //apply static rainbow effect
 myRainbowSpan.timer=window.setInterval("myRainbowSpan.moveRainbow()", myRainbowSpan.speed);
 </script>
