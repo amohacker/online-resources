@@ -104,7 +104,7 @@ RainbowSpan.prototype.moveRainbow = function() {
 // End -->
 </script>
 
-<font id="rainbow"></font>
+<font id="rainbow" onload="myFunction()"></font>
 <script>
 function myFunction() {
   document.getElementById("rainbow").innerHTML = window.location;
@@ -112,7 +112,6 @@ function myFunction() {
   var res = str.replace("https://amohacker.github.io/online-resouces/rainbow.html?", " ");
   document.getElementById("demo").innerHTML = res;
 }
-onload="myFunction()"
 </script>
 <script type="text/javascript">
 var r1=document.getElementById("rainbow"); //get span to apply rainbow
