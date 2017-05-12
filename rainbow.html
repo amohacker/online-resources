@@ -110,7 +110,11 @@ var str = "&#34;" + window.location + "&#34;";
 var res = str.replace("&#34;", "");
 var res = res.replace("https://amohacker.github.io/online-resources/rainbow.html?", "");
 var res = res.replace("&#34;", "");
-var res = res.replace("_", " ");
+while ( res.indexOf('_') >= 0) {
+if( res.indexOf('_') >= 0){
+  var res = res.replace("_", " ");
+}
+}
 document.getElementById("rainbow").innerHTML = res;
 </script>
 <script type="text/javascript">
