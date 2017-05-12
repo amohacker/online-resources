@@ -107,7 +107,7 @@ RainbowSpan.prototype.moveRainbow = function() {
 <div id="rainbow"></div>
 <script>
 var str = "&#34;" + window.location + "&#34;";
-var res = res.replace(/&#34;|_/, "");
+var res = res.replace(/&#34;|_/g, "");
 var res = str.replace("https://amohacker.github.io/online-resources/rainbow.html?", "");
 document.getElementById("rainbow").innerHTML = res;
 </script>
