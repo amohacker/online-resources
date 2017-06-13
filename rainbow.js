@@ -1,8 +1,4 @@
 <!-- Begin
-/* This script and many more are available free online at
-The JavaScript Source!! http://javascript.internet.com
-Created by: HaganeNoKokoro :: http://tinyurl.com/buvp9 */
-
 /*
  * Notes on hue
  *
@@ -98,6 +94,9 @@ RainbowSpan.prototype.moveRainbow = function() {
   this.hue+=this.hspd;
 }
 // End -->
-var r1=document.getElementById("rainbow"); //get span to apply rainbow
-var myRainbowSpan=new RainbowSpan(rainbow, 0, 360, 255, 50, 18); //apply static rainbow effect
-myRainbowSpan.timer=window.setInterval("myRainbowSpan.moveRainbow()", myRainbowSpan.speed);
+rainbowsetup()
+function rainbowsetup() {
+	var r1=document.getElementById("rainbow"); //get span to apply rainbow
+	var myRainbowSpan=new RainbowSpan(rainbow, 0, 360, 255, 50, 18); //apply static rainbow effect
+	myRainbowSpan.timer=window.setInterval("myRainbowSpan.moveRainbow()", myRainbowSpan.speed);
+}
