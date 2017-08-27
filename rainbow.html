@@ -107,7 +107,7 @@ RainbowSpan.prototype.moveRainbow = function() {
 var str = "&#34;" + window.location + "&#34;";
 var res = str.replace("&#34;", "");
 var res = res.replace("https://amohacker.github.io/online-resources/rainbow.html?", "");
-var size = res.replace(/\bp[A-Za-z0-9]*/g, "");
+var size = res.replace(/^?/, "");
 alert(size);
 var res = res.replace("&#34;", "");
 while ( res.indexOf('_') >= 0) {
