@@ -107,7 +107,8 @@
     const params = new URLSearchParams(window.location.search);
     var res = params.get('text');
     var size = params.get('size');
-    var color = params.get('color');  
+    var color = params.get('color');
+    alert(res + size + color)
     var res = res.replaceAll("%20", " ");
     document.getElementById("rainbow").innerHTML = res;
 </script>
