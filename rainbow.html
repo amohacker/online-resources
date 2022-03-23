@@ -102,14 +102,18 @@
     // End -->
 </script>
 
-<div id="rainbow"></div>
+<div id="rainbow" style="font-size: 20;"></div>
 <script>
     const params = new URLSearchParams(window.location.search);
     var res = params.get('text');
     var size = params.get('size');
+    var font = params.get('font');
     var color = params.get('color');
     var res = res.replaceAll("%20", " ");
     document.getElementById("rainbow").innerHTML = res;
+    document.getElementById("rainbow").style.fontSize = size+"px";
+    document.getElementById("rainbow").style.fontFamily = font;
+    document.body.style.backgroundColor = color;
 </script>
 <script type="text/javascript">
     var rainbow=document.getElementById("rainbow"); //get span to apply rainbow
